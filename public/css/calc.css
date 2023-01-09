@@ -1,0 +1,104 @@
+body{
+    background: #f7fff7ff;
+      
+}
+
+.container{
+    display: grid;
+    grid-template-columns: [side]35% [calculator]30%  ;
+    grid-template-rows: [side]5vw [calculator]35vw [side]5vw ;
+
+}
+
+.side{
+    grid-row: side  ;
+}
+
+.calculator{
+    grid-row: calculator;
+    grid-column: calculator;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "bandeau bandeau bandeau bandeau"
+    "fonction fonction fonction fonction "
+    "clavier clavier clavier operator"
+    "clavier clavier clavier operator"
+    "clavier clavier clavier  operator"
+    "clavier clavier clavier operator ";
+
+
+}
+
+.clavier{
+    grid-area:clavier;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.operator{
+    grid-area:operator;
+    display: grid;
+}
+
+.bandeau{
+    grid-area: bandeau;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.fonction{
+    grid-area:fonction;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.last{
+    grid-area:last ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 2fr;
+}
+
+
+button{
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  border: solid #455d7a 2px;
+  text-align: center;
+  background: #233142;
+  color: #f7fff7ff;
+
+}
+
+button:hover{
+    background-color:#e3e3e3;
+    color: #233142;
+}
+
+
+.bandeau {
+    grid-column: 1 / -1;
+    background-color:#e3e3e3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .bandeau .previous-operand {
+    color:#233142;
+    font-size: 1.5rem;
+  }
+  
+  .bandeau .current-operand {
+    color: #233142;
+    font-size: 2.5rem;
+  }
+ 
+  button[data-egal] {
+    background-color: #f95959;
+  }

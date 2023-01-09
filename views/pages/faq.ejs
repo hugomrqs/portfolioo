@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calc.css">
+    <script src=js/calc.js defer></script>
+</head>
+
+<body>
+  <%- include("partials/header") %>
+    <div class="container">
+        <div class=side></div>
+        <div class="calculator">
+            <div class="bandeau">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+              
+            </div>
+            <div class="clavier">
+                <button data-number>9</button>
+                <button data-number>8</button>
+                <button data-number>7</button>
+                <button data-number>6</button>
+                <button data-number>5</button>
+                <button data-number>4</button>
+                <button data-number>3</button>
+                <button data-number>2</button>
+                <button data-number>1</button>
+                <button data-number >.</button>
+                <button data-number>0</button>
+                <button data-egal>=</button>
+            </div>
+            <div class="operator">
+                <button data-operator >+</button>
+                <button data-operator >-</button>
+                <button data-operator >/</button>
+                <button data-operator >*</button>
+
+            </div>
+
+            <div class="fonction">
+                <button data-all-clear class="spe"> AC</button>
+                <button data-fonction class="spe"> DELL</button>
+            </div>
+       
+
+        </div>
+    </div>
+    <%- include("partials/footer") %>
+</body>
+
+</html>

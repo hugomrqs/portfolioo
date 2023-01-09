@@ -1,0 +1,26 @@
+.hero {
+    /* overflow: hidden; */
+    width: 200vw;
+    height: 10vh;
+    position: relative;
+  }
+  
+  .anim {
+
+    height: 5vh;
+    width: 300vw;
+    background: linear-gradient(270deg,#f7fff7ff,  #674ea0, #900C3F, #900C3F);
+    animation: backgroundGradient 4s ease-in-out infinite;
+  }
+  
+  @keyframes backgroundGradient {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(0%, -50%);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }

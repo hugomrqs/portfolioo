@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/stylesN.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Visual novel</title>
+</head>
+<body>
+    <div class="bg-img" id="bg">
+        <div class="bg">
+            <div class="content">
+                <div class="img-div">
+                    <img id="img-perso" class="img" src="./public/img/sally.png"/>
+                </div>
+                <div class="choix-div" id="choix">
+                </div>
+                <div class="info-div">
+                    <div class="nom-div">
+                        <p class="nom" id="nom-perso"></p>
+                    </div>
+
+                    <div class="text-div">
+                        <p class="text" id="text"></p>
+                        <p id="continueButton" class="continue" onclick=v.onContinuePress()>CONTINUER</p>
+                    </div>
+                    <button class="accueil" onclick="window.location.href = '/';">Accueil</button>
+
+                </div>
+            </div>
+            <div class="bg-ellipse">
+                <div class="bg-black">
+                    <p class="text-ellipse"></p>
+                    <p id="continueButton" class="continue" onclick=v.onContinuePress() >CONTINUER</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/visualNovel.js"></script>
+
+</body>
+</html>

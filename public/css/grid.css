@@ -1,0 +1,13 @@
+.grid{
+    display : grid;
+    grid-template-areas: "img block";
+    }
+.pdp img{
+    border-radius: 50%;
+    grid-area: img;
+    }
+
+.description{
+    grid-area: block;
+    padding: 20px;
+}

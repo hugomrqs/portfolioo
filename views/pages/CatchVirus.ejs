@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/CatchVirusStyle.css" />
+    <title>Tue les IST!</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Tue les IST!</h1>
+      <button class="btn" id="start-btn">Lancer le jeu</button>
+    </div>
+
+    <div class="screen">
+      <h1>Choisi une IST!</h1>
+      <ul class="viruss-list">
+        <li>
+          <button class="choose-virus-btn">
+            <p>Hépatite</p>
+            <img 
+            src="https://pngimg.com/uploads/virus/virus_PNG1.png" 
+            alt="Hépatite">
+          </button>
+        </li>
+        <li>
+          <button class="choose-virus-btn">
+            <p>VIH</p>
+            <img
+               src="https://pngimg.com/uploads/virus/virus_PNG4.png"
+               alt="VIH"
+               />
+          </button>
+        </li>
+        <li>
+          <button class="choose-virus-btn">
+            <p>Herpes</p>
+            <img
+               src="https://pngimg.com/uploads/virus/virus_PNG9.png"
+               alt="Herpes"
+               />
+          </button>
+        </li>
+        <li>
+            <button class="choose-virus-btn">
+              <p>Scyphilys</p>
+              <img
+                 src="https://pngimg.com/uploads/virus/virus_PNG16.png"
+                 alt="Scyphilys"
+                 />
+            </button>
+          </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Temps: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <button class="accueil" onclick="window.location.href = '/';">Accueil</button>
+
+      <h5 id="message" class="message">
+        <br> Tu t'ennuies?  <br>
+        C'est impossible de gagner si tu ne te protèges pas!
+        <a href="https://www.sida-info-service.org/les-ist-ne-sont-pas-a-negliger/">Les Ist ne sont pas négliger!</a>
+      </h5>
+    </div>
+
+    <script src="/js/CatchVirusScript.js"></script>
+  </body>
+</html
